@@ -214,6 +214,9 @@ body {
     body{
        flex-direction: row;
         background: linear-gradient(45deg,white,black);
+background-image:url('https://wallpaperaccess.com/full/4527457.jpg');
+background-repeat:no-repeat;
+background-size:cover;
     }
     .container {
         flex-direction: column;
