@@ -259,4 +259,8 @@ const wordList = [
         word: "brilliant",
         hint: "Exceptionally clever, talented, or impressive."
     },
+    {
+       word:"fire",
+       hint:"I am not alive, but I can grow; I don’t have lungs, but I need air; I don’t have a mouth, but water kills me. What am I?"    
+    }, 
 ];
