@@ -260,8 +260,8 @@ body {
 }
 marquee{
     margin-top:  55px ;
-    background:linear-gradient(black,white,gray);
+    
     color: white;
-   -webkit-background-clip:text ;
-    background-clip:text ;
+   
+    
 }
