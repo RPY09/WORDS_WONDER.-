@@ -45,23 +45,23 @@ body{
 }
 .name{
     opacity: 0;
-    animation: mo 20s linear infinite;
+    animation: mo 12s linear infinite;
 }
 @keyframes mo {
     0%{
-        opacity: 1;
+        opacity: 0;
     }
     25%{
-        opacity: 0;
+        opacity: 1;
     }
     50%{
-        opacity: 1;
-    }
-    75%{
         opacity: 0;
     }
-    100%{
+    75%{
         opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
 .name:nth-child(1) { animation-delay: 1s; }
