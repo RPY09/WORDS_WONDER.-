@@ -1,114 +1,126 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Glassmorphism login Form Tutorial in html css</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Design by foolishdeveloper.com -->
     <title>WORDS WONDER.!!</title>
-</head>
-<style>
-    *{
-    margin:0px;
-    padding: 0px;
-    transition: all;
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body{
-    background: linear-gradient(-45deg,black,white,gray);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all;
+    background-color: #080710;
 }
-@keyframes gradient {
-            0% {
-                background-position: 0% 25%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-.heading{
-    margin-left: 30px;
-    display: inline-flex;
-    align-items: center;justify-content: center;
-    height: auto;
-    width: 100%;
-    font-size: 100px;
-    margin-top: 100px;
-    color: black;
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
 }
-.name{
-    opacity: 0;
-    animation: mo 12s linear infinite;
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
 }
-@keyframes mo {
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-    75%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
 }
-.name:nth-child(1) { animation-delay: 1s; }
-.name:nth-child(2) { animation-delay: 3s; }
-.name:nth-child(3) { animation-delay: 2s; }
-
-.name:nth-child(4) { animation-delay: 4s; }
-.name:nth-child(5) { animation-delay: 1.5; }
-.name:nth-child(6) { animation-delay: 3.5; }
-.name:nth-child(7) { animation-delay: 2.5; }
-.name:nth-child(8) { animation-delay: 4.5; }
-.name:nth-child(9) { animation-delay: 1s; }
-.name:nth-child(10) { animation-delay: 3s; }
-.name:nth-child(11) { animation-delay: 2s; }
-.name:nth-child(12) { animation-delay: 4s; }
-
-#main{
-    font-size: 4rem;
-    max-width: 420px;
-    margin: auto;
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
     text-align: center;
-    color:rgba(255, 255, 255, 0.593);
-    display: flex;
-    height: 700px;
-    width: 100%;
-    background-color: aqua;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
 }
 
-
-.box{
-    border-radius: 5px;
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
 }
 button{
-    margin-top: 200px;
-    font-size: 40px;
-    padding: 20px 50px;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
-    box-shadow: -5px 0px 10px white;
 }
+
 
 .s1{
     position: absolute;
@@ -117,7 +129,7 @@ button{
     width: 0%;
     height: 3px;
     border-radius: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 
@@ -131,7 +143,7 @@ button:hover .s1{
     width: 3px;
     height: 0%;
     border-radius: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 button:hover .p2{
@@ -144,7 +156,7 @@ button:hover .p2{
     width: 0%;
     height: 3px;
     border-radius: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 button:hover .a3{
@@ -157,47 +169,69 @@ button:hover .a3{
     width: 3px;
     height: 0%;
     border-radius: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 button:hover .n4{
     height: 100%;
 } 
-@media (max-width:782px) {
-    .heading{
-        font-size: 30px;
-    }
-    
+
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
 }
 
-</style>
+    </style>
+</head>
 <body>
-   <div class="heading">
-    <div class="name">W</div>
-    <div class="name">O</div>
-    <div class="name">R</div>
-    <div class="name">D</div>
-    <div class="name">S</div>
-    <div class="name">_</div>
-    <div class="name">W</div>
-    <div class="name">O</div>
-    <div class="name">N</div>
-    <div class="name">D</div>
-    <div class="name">E</div>
-    <div class="name">R</div>
-    <div class="name">S</div>
-    <div class="name">.</div>
-    <div class="name">!!</div>
-   </div>
-    <a href="WORDS WONDER.!!.html">
-        <button>
-            enter game
-            <span class="s1"></span>
-            <span class="p2"></span>
-            <span class="a3"></span>
-            <span class="n4"></span>
-            </button>
-    </a>
-    
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>WORDS WONDER.!!</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <a href="WORDS WONDER.!!.html">
+            <button>
+                enter game
+                <span class="s1"></span>
+                <span class="p2"></span>
+                <span class="a3"></span>
+                <span class="n4"></span>
+                </button>
+        </a>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
+<!-- partial -->
+  
 </body>
 </html>
