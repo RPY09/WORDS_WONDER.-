@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDS WONDER.!!</title>
+</head>
+<style>
+    *{
+    margin:0px;
+    padding: 0px;
+    transition: all;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all;
+}
+
+.heading{
+    margin-left: 30px;
+    display: inline-flex;
+    align-items: center;justify-content: center;
+    height: auto;
+    width: 100%;
+    font-size: 100px;
+    margin-top: 100px;
+    color: white;
+}
+.name{
+    opacity: 0;
+    animation: mo 20s linear infinite;
+}
+@keyframes mo {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.name:nth-child(1) { animation-delay: 1s; }
+.name:nth-child(2) { animation-delay: 3s; }
+.name:nth-child(3) { animation-delay: 2s; }
+
+.name:nth-child(4) { animation-delay: 4s; }
+.name:nth-child(5) { animation-delay: 1.5; }
+.name:nth-child(6) { animation-delay: 3.5; }
+.name:nth-child(7) { animation-delay: 2.5; }
+.name:nth-child(8) { animation-delay: 4.5; }
+.name:nth-child(9) { animation-delay: 1s; }
+.name:nth-child(10) { animation-delay: 3s; }
+.name:nth-child(11) { animation-delay: 2s; }
+.name:nth-child(12) { animation-delay: 4s; }
+
+#main{
+    font-size: 4rem;
+    max-width: 420px;
+    margin: auto;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.593);
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-color: aqua;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.box{
+    border-radius: 5px;
+}
+button{
+    margin-top: 200px;
+    font-size: 40px;
+    padding: 20px 50px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: -5px 0px 10px white;
+}
+/* 
+button:hover {
+    border:10px solid black;
+}  */
+.s1{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+button:hover .s1{
+    width: 100%;
+}
+.p2{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 3px;
+    height: 0%;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+button:hover .p2{
+    height: 100%;
+}
+.a3{
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    width: 0%;
+    height: 3px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+button:hover .a3{
+    width: 100%;
+}
+.n4{
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    width: 3px;
+    height: 0%;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+button:hover .n4{
+    height: 100%;
+} 
+@media (max-width:782px) {
+    .heading{
+        font-size: 50px;
+    }
+    
+}
+
+</style>
+<body>
+   <div class="heading">
+    <div class="name">W</div>
+    <div class="name">O</div>
+    <div class="name">R</div>
+    <div class="name">D</div>
+    <div class="name">S</div>
+    <div class="name">_</div>
+    <div class="name">W</div>
+    <div class="name">O</div>
+    <div class="name">N</div>
+    <div class="name">D</div>
+    <div class="name">E</div>
+    <div class="name">R</div>
+    <div class="name">S</div>
+    <div class="name">.</div>
+    <div class="name">!!</div>
+   </div>
+    <a href="WORDS WONDER.!!.html">
+        <button>
+            enter game
+            <span class="s1"></span>
+            <span class="p2"></span>
+            <span class="a3"></span>
+            <span class="n4"></span>
+            </button>
+    </a>
+    
+</body>
+</html>
