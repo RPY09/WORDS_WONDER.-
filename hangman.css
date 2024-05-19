@@ -262,6 +262,6 @@ marquee{
     margin-top:  55px ;
     background:linear-gradient(black,white,gray);
     color: transparent;
-    webkit-bac -webkit-background-clip:text ;
+   -webkit-background-clip:text ;
     background-clip:text ;
 }
