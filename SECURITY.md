@@ -2,20 +2,41 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+We release patches for security vulnerabilities. Which versions are currently being supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 1.0.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability within WORDS WONDER, please let us know as soon as possible. We take all security vulnerabilities seriously and will address them promptly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+To report a vulnerability, please follow these steps:
+
+1. **Contact Us**: Send an email to [YOUR CONTACT EMAIL] with the details of the vulnerability.
+2. **Information to Include**:
+    - A description of the vulnerability.
+    - Steps to reproduce the vulnerability.
+    - Any potential impact of the vulnerability.
+
+We will acknowledge receipt of your report within 48 hours, and will provide a detailed response within 5 business days.
+
+## Security Updates
+
+We will communicate security updates through the following channels:
+- GitHub Releases
+- Repository Issues
+
+## Security Best Practices
+
+We recommend users to:
+- Regularly update to the latest version.
+- Review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the standards for community interactions.
+- Follow secure coding practices and conduct regular security audits.
+
+Thank you for helping to keep WORDS WONDER safe for everyone.
+
+## Contact
+
+For any questions or concerns regarding security, please contact [YOUR CONTACT EMAIL].
